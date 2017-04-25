@@ -39,20 +39,16 @@ namespace PrintProject
         /// <returns></returns>
         public static string Object2Json(object jsonObject)
         {
-
             try
             {
-
                 return JsonConvert.SerializeObject(jsonObject).Replace("null", "\"\"");
-
             }
             catch (Exception exMsg)
             {
                 return exMsg.ToString();
             }
-
         }
-
+      
         /// <summary>
         /// Json转对象
         /// </summary>

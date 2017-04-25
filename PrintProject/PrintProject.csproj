@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -124,8 +125,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="css\" />
     <Folder Include="files\" />
-    <Folder Include="images\" />
-    <Folder Include="js\" />
+    <Folder Include="images\Common\" />
+    <Folder Include="js\Common\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PrintBLL\PrintBLL.csproj">
