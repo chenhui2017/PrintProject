@@ -10,5 +10,7 @@ namespace PrintCommon
     {
         public int MyProperty { get; set; }
         public int yangdiannaogaideya { get; set; }
+
+        public int meinv { get; set; }
     }
 }
