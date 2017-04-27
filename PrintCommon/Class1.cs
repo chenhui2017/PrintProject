@@ -12,5 +12,6 @@ namespace PrintCommon
         public int yangdiannaogaideya { get; set; }
 
         public int meinv { get; set; }
+        public int sida { get; set; }
     }
 }
