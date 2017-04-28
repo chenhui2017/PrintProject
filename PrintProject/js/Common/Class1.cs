@@ -7,5 +7,6 @@ namespace PrintProject.js.Common
 {
     public class Class1
     {
+        //测试
     }
 }
