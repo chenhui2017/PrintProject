@@ -124,6 +124,7 @@
     <Compile Include="JasonDataTable.cs" />
     <Compile Include="JSON.cs" />
     <Compile Include="JsonHelper.cs" />
+    <Compile Include="js\Common\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
