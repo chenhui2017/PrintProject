@@ -14,7 +14,7 @@ namespace PrintBLL
   public  class UsersBLL
     {
 
-        UsersDAL DAL = new UsersDAL();
+      
         /// <summary>
         /// 
         /// </summary>

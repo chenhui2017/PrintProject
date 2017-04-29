@@ -10,9 +10,6 @@
     <title>企业信息管理系统</title>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 
-    <link href="css/huiyi8.css" rel="stylesheet" type="text/css" />
-    <script src="js/jquery.js"></script>
-    <script src="js/slide.js"></script>
     <style>
         #tablist {
             border-right: 1px solid #F00;

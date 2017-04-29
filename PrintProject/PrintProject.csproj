@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AspNetPager2.0">
+      <HintPath>F:\北京项目相关\PrintProject\PrintProject\bin\AspNetPager2.0.dll</HintPath>
+    </Reference>
     <Reference Include="Interop.SQLDMO, Version=8.0.0.0, Culture=neutral">
       <HintPath>..\packages\Interop.SQLDMO.8.0.0.0\lib\Interop.SQLDMO.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -132,12 +135,14 @@
     <Content Include="js\Common\5.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\Common\jquery.validate.js" />
+    <Content Include="Payin.aspx" />
     <Content Include="UserControl\Navigation.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Data\StringHandler.cs" />
     <Compile Include="BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -162,6 +167,13 @@
     <Compile Include="Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Payin.aspx.cs">
+      <DependentUpon>Payin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payin.aspx.designer.cs">
+      <DependentUpon>Payin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicOpt.cs" />
     <Compile Include="UserControl\Navigation.ascx.cs">
@@ -173,7 +185,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="files\" />
     <Folder Include="images\Common\" />
   </ItemGroup>

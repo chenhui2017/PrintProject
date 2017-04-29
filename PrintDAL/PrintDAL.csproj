@@ -82,6 +82,7 @@
     <Compile Include="DESEncrypt.cs" />
     <Compile Include="DictionaryDAL.cs" />
     <Compile Include="Encrypt.cs" />
+    <Compile Include="FinanceRecordDAL.cs" />
     <Compile Include="IDbHelper.cs" />
     <Compile Include="IDbHelperExpand.cs" />
     <Compile Include="JSON.cs" />

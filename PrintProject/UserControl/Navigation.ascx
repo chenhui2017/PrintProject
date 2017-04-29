@@ -79,9 +79,9 @@
         </li>
 
         <li class="mainlevel" id="mainlevel_04">
-            <a href="http://www.baidu.com" target="_blank">出纳系统</a>
+            <a href="#" target="_blank">出纳系统</a>
             <ul id="sub_04">
-                <li><a href="http://www.baidu.com" target="_blank">订单查询</a></li>
+                <li><a href="../Payin.aspx" target="_blank">订单查询</a></li>
                 <li><a href="http://www.baidu.com" target="_blank">应收款项</a></li>
                 <li><a href="http://www.baidu.com" target="_blank">应收明细</a></li>
                 <li><a href="http://www.baidu.com" target="_blank">应收总账</a></li>

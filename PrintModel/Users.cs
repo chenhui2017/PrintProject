@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace PrintModel
 {
    /// <summary>
-   /// Users yzz  2017-4-29 0.39
+   /// 用户表 yzz  2017-4-29 0.39
    /// </summary>
   public  class Users
     {
