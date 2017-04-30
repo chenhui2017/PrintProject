@@ -39,8 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AspNetPager2.0">
-      <HintPath>F:\北京项目相关\PrintProject\PrintProject\bin\AspNetPager2.0.dll</HintPath>
+    <Reference Include="AspNetPager, Version=7.5.1.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNetPager.7.5.1.0\lib\AspNetPager.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Interop.SQLDMO, Version=8.0.0.0, Culture=neutral">
       <HintPath>..\packages\Interop.SQLDMO.8.0.0.0\lib\Interop.SQLDMO.dll</HintPath>
@@ -192,6 +193,10 @@
     <ProjectReference Include="..\PrintBLL\PrintBLL.csproj">
       <Project>{547c15a2-42c4-4ec5-890d-dcf1435b2817}</Project>
       <Name>PrintBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrintCommon\PrintCommon.csproj">
+      <Project>{6aaee292-5a26-4aba-9810-cf88a59acb52}</Project>
+      <Name>PrintCommon</Name>
     </ProjectReference>
     <ProjectReference Include="..\PrintDAL\PrintDAL.csproj">
       <Project>{bde3a9a9-747c-4b78-98ee-2bcfbf491d53}</Project>
