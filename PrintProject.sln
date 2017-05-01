@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "文件资料", "文件资�
 		ReadMe.txt = ReadMe.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintCommonTests", "PrintCommonTests\PrintCommonTests.csproj", "{6BE9F896-80AF-4538-A3E5-5F9E21882F78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,12 +46,16 @@ Global
 		{6AAEE292-5A26-4ABA-9810-CF88A59ACB52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AAEE292-5A26-4ABA-9810-CF88A59ACB52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AAEE292-5A26-4ABA-9810-CF88A59ACB52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BE9F896-80AF-4538-A3E5-5F9E21882F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE9F896-80AF-4538-A3E5-5F9E21882F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE9F896-80AF-4538-A3E5-5F9E21882F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE9F896-80AF-4538-A3E5-5F9E21882F78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35;packages\Unity.Interception.2.1.505.2\lib\NET35
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal
