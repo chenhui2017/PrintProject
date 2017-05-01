@@ -136,6 +136,7 @@
     <Content Include="js\jquery.js" />
     <Content Include="js\Common\jquery.validate.js" />
     <Content Include="Payin.aspx" />
+    <Content Include="RolesJurisdiction.aspx" />
     <Content Include="UserControl\Navigation.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -176,6 +177,13 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicOpt.cs" />
+    <Compile Include="RolesJurisdiction.aspx.cs">
+      <DependentUpon>RolesJurisdiction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RolesJurisdiction.aspx.designer.cs">
+      <DependentUpon>RolesJurisdiction.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Navigation.ascx.cs">
       <DependentUpon>Navigation.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
