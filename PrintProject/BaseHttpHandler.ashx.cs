@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Reflection;
 using System.Web;
@@ -9,7 +11,7 @@ namespace PrintProject
     /// <summary>
     /// BaseHttpHandler 的摘要说明
     /// </summary>
-    public class BaseHttpHandler<T> : IHttpHandler where T : new()
+    public class BaseHttpHandler<T>: IHttpHandler where T : new()
     {
         public HttpContext context;
         public BaseHttpHandler()
@@ -47,11 +49,11 @@ namespace PrintProject
         }
         public void Write(Object o = null,bool isSuccess=true,string msg="")
         {
-            var data = JsonHelper.ObjectToJson(o);
+            var value = new { isSuccess = isSuccess, msg = msg, data = o };
             context.Response.ContentType = "text/plain";
-            context.Response.Write(new {isSuccess=isSuccess,msg=msg, data=data });
+            context.Response.Write(JsonConvert.SerializeObject(value));
         }
-        public  T PostDataToModel()
+        public T PostDataToModel()
         {
             var model = new T();
             Type t = model.GetType();

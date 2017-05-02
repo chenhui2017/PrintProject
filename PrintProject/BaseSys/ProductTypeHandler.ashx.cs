@@ -8,11 +8,10 @@ using System.Web;
 namespace PrintProject.BaseSys
 {
     /// <summary>
-    /// ProductType 的摘要说明
+    /// ProductTypeHandler 的摘要说明
     /// </summary>
     public class ProductTypeHandler : BaseHttpHandler<ProductType>
     {
-       
         public void GetProductType()
         {
             var ProductType = PostDataToModel();
@@ -20,5 +19,6 @@ namespace PrintProject.BaseSys
             var data = bll.Get(ProductType);
             Write(data);
         }
+
     }
 }

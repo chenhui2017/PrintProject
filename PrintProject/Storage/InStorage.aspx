@@ -84,11 +84,8 @@
 
                     <td>
                         <select name="TypeName1" id="ddl_TypeName1">   
-                            <option value="1">18-21</option>   
-                            <option value="2">22-25</option>   
-                            <option value="3">26-29</option>   
-                            <option value="4">30-35</option>   
-                            <option value="5">Over35</option> 
+                               
+                            
                         </select>
                     </td>
                     <td><input type="text" id="hardName" /></td>
@@ -166,8 +163,32 @@
          </form>
     <script type="text/javascript">
         $(function () {
-            Init
+            Init();
         })
+        function Init() {
+            InitProductType();
+        }
+        function InitProductType() {
+            $.ajax({
+                type: "POST",
+                url: "../BaseSys/ProductTypeHandler.ashx?action=GetProductType",
+                data: "",
+                dataType: "json",
+                success: function (result) {
+                    if (result.isSuccess) {
+                        var data = result.data;
+                        $(data).each(function(index,row){
+                            $("#ddl_TypeName1").append("<option value="+ row.TYPENAME1 + ">" + row.TYPENAME1 + "</option>");
+                        });
+
+                       
+                    } else {
+                        alert(result.msg);
+                    }
+                   
+                }
+            });
+        }
     </script>
 </body>
 </html>

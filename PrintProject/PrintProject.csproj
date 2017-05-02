@@ -130,8 +130,8 @@
     <Content Include="Login.aspx" />
     <Content Include="Main.aspx" />
     <Content Include="packages.config" />
-    <Content Include="BaseSys\ProductTypeHandler.ashx" />
     <Content Include="BaseHttpHandler.ashx" />
+    <Content Include="BaseSys\ProductTypeHandler.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
