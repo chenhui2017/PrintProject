@@ -96,7 +96,7 @@
             <a href="http://www.baidu.com" target="_blank">仓库系统</a>
             <ul id="sub_05">
                 <li><a href="http://www.baidu.com" target="_blank">申请采购</a></li>
-                <li><a href="../Storage/InStorage.aspx" target="_blank">入库管理</a></li>
+                <li><a href="http://www.baidu.com" target="_blank">入库管理</a></li>
                 <li><a href="http://www.baidu.com" target="_blank">入库明细</a></li>
                 <li><a href="http://www.baidu.com" target="_blank">申请领料</a></li>
                 <li><a href="http://www.baidu.com" target="_blank">出库管理</a></li>
@@ -121,30 +121,30 @@
                 <li><a href="http://www.baidu.com" target="_blank">供应商管理</a></li>
             </ul>
         </li>
-        <li class="mainlevel" id="mainlevel_06">
+        <li class="mainlevel" id="mainlevel_07">
             <a href="http://www.baidu.com" target="_blank">人事系统</a>
-            <ul id="sub_06">
+            <ul id="sub_07">
                 <li><a href="http://www.baidu.com" target="_blank">信息录入</a></li>
-                  <li><a href="http://www.baidu.com" target="_blank">员工管理</a></li>
+                <li><a href="http://www.baidu.com" target="_blank">员工管理</a></li>
             </ul>
         </li>
-         <li class="mainlevel" id="mainlevel_06">
+         <li class="mainlevel" id="mainlevel_08">
             <a href="http://www.baidu.com" target="_blank">送货系统</a>
-            <ul id="sub_06">
+            <ul id="sub_08">
                 <li><a href="http://www.baidu.com" target="_blank">待完善</a></li>
                  
             </ul>
         </li>
-          <li class="mainlevel" id="mainlevel_06">
+          <li class="mainlevel" id="mainlevel_09">
             <a href="http://www.baidu.com" target="_blank">基础设置</a>
-            <ul id="sub_06">
-                <li><a href="http://www.baidu.com" target="_blank">权限分配</a></li>
+            <ul id="sub_09">
+                <li><a href="../RolesJurisdiction.aspx" target="_blank">权限分配</a></li>
                  
             </ul>
         </li>
-        <li class="mainlevel" id="mainlevel_06">
+        <li class="mainlevel" id="mainlevel_10">
             <a href="http://www.baidu.com" target="_blank">退出</a>
-            <ul id="sub_06">
+            <ul id="sub_10">
                 <li><a href="http://www.baidu.com" target="_blank"></a></li>
             </ul>
         </li>

@@ -42,6 +42,7 @@
     <Compile Include="BaseSys\ProductTypeBLL.cs" />
     <Compile Include="FinanceRecordBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RolesJurisdictionBLL.cs" />
     <Compile Include="UsersBLL.cs" />
   </ItemGroup>
   <ItemGroup>
