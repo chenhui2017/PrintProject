@@ -17,7 +17,7 @@
         }
 
             #tablist td {
-                border-left: 1px solid #F00;
+                border-left: 1px solid #F0<a href="Main.aspx">Main.aspx</a>0;
                 border-top: 1px solid #F00;
             }
 

@@ -96,7 +96,7 @@
             <a href="http://www.baidu.com" target="_blank">仓库系统</a>
             <ul id="sub_05">
                 <li><a href="http://www.baidu.com" target="_blank">申请采购</a></li>
-                <li><a href="http://www.baidu.com" target="_blank">入库管理</a></li>
+                <li><a href="../Storage/InStorage.aspx" target="_blank">入库管理</a></li>
                 <li><a href="http://www.baidu.com" target="_blank">入库明细</a></li>
                 <li><a href="http://www.baidu.com" target="_blank">申请领料</a></li>
                 <li><a href="http://www.baidu.com" target="_blank">出库管理</a></li>

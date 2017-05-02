@@ -43,6 +43,10 @@
       <HintPath>..\packages\AspNetPager.7.5.1.0\lib\AspNetPager.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Interop.SQLDMO, Version=8.0.0.0, Culture=neutral">
       <HintPath>..\packages\Interop.SQLDMO.8.0.0.0\lib\Interop.SQLDMO.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -76,6 +80,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Microsoft.Practices.Unity.Interception.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Newtonsoft.Json.dll</HintPath>
@@ -125,6 +130,8 @@
     <Content Include="Login.aspx" />
     <Content Include="Main.aspx" />
     <Content Include="packages.config" />
+    <Content Include="BaseSys\ProductTypeHandler.ashx" />
+    <Content Include="BaseHttpHandler.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -138,7 +145,9 @@
     <Content Include="js\jquery.js" />
     <Content Include="js\Common\jquery.validate.js" />
     <Content Include="Payin.aspx" />
+    <Content Include="Storage\InStorage.aspx" />
     <Content Include="Test\TestDate.aspx" />
+    <Content Include="Test\TestProductType.aspx" />
     <Content Include="UserControl\Navigation.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -146,8 +155,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Data\StringHandler.cs" />
+    <Compile Include="BaseHttpHandler.ashx.cs">
+      <DependentUpon>BaseHttpHandler.ashx</DependentUpon>
+    </Compile>
     <Compile Include="BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseSys\ProductTypeHandler.ashx.cs">
+      <DependentUpon>ProductTypeHandler.ashx</DependentUpon>
     </Compile>
     <Compile Include="DataTableHelper.cs" />
     <Compile Include="Global.asax.cs">
@@ -179,12 +194,32 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicOpt.cs" />
+    <Compile Include="Storage\InStorage.aspx.cs">
+      <DependentUpon>InStorage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\InStorage.aspx.designer.cs">
+      <DependentUpon>InStorage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\TestCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Test\TestDate.aspx.cs">
       <DependentUpon>TestDate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Test\TestDate.aspx.designer.cs">
       <DependentUpon>TestDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\TestProductType.aspx.cs">
+      <DependentUpon>TestProductType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\TestProductType.aspx.designer.cs">
+      <DependentUpon>TestProductType.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Navigation.ascx.cs">
       <DependentUpon>Navigation.ascx</DependentUpon>
@@ -211,6 +246,19 @@
       <Project>{bde3a9a9-747c-4b78-98ee-2bcfbf491d53}</Project>
       <Name>PrintDAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PrintModel\PrintModel.csproj">
+      <Project>{44D29FBF-48D9-495B-A26D-6F6BAFDF3C50}</Project>
+      <Name>PrintModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Test\TestCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TestCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

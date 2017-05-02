@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseSys\ProductType.cs" />
     <Compile Include="CompanyInfo.cs" />
     <Compile Include="FinanceEarningMonthly.cs" />
     <Compile Include="FinanceOperateFlowRecord.cs" />
